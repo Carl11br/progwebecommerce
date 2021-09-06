@@ -4,7 +4,7 @@ import './styles.css';
 
 import fplanta from '../../../../assets/planta.jpg';
 
-export default function ItenView(props){
+export default function ItemView(props){
     console.log(props.produto)
     
     return(

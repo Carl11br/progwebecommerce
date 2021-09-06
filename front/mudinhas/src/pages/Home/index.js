@@ -6,7 +6,7 @@ import api from '../../services/api'
 import './styles.css';
 
 import Gridbox from './components/GridBox'
-import ItenView from './components/ItenView'
+import ItemView from './components/ItemView'
 
 export default function Home() {
     const [produtos, setProdutos] = useState([]);
@@ -25,7 +25,7 @@ export default function Home() {
         if (visu === 0) {
           return <Gridbox produtos={props.produtos} setVisu={setVisu}/>
         }
-        return <ItenView  produto={props.produtos.find((element) => { return element.id === visu; }) } setVisu={setVisu}/>;
+        return <ItemView  produto={props.produtos.find((element) => { return element.id === visu; }) } setVisu={setVisu}/>;
       }
 
     return(
